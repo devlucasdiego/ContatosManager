@@ -18,11 +18,12 @@ public class Contato implements Serializable {
     @Column(nullable = false, updatable = false)
     private String codContato;
 
-
+    // Construtor Padrão
     public Contato() {
 
     }
 
+    // Construtor Especial
     public Contato(Long id, String nome, String siglaComarca, String nomeComarca, String circuito, String cargo, String numero, String codContato) {
         this.id = id;
         this.nome = nome;
@@ -34,6 +35,7 @@ public class Contato implements Serializable {
         this.codContato = codContato;
     }
 
+    // Getters e Setters
     public Long getId() {
         return id;
     }
@@ -98,6 +100,7 @@ public class Contato implements Serializable {
         this.codContato = codContato;
     }
 
+    // Método ToString
     @Override
     public String toString() {
         return "Contato{" +
