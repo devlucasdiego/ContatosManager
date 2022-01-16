@@ -15,9 +15,9 @@ public class Contato implements Serializable {
     private String circuito;
     private String cargo;
     private String numero;
-    private String codContato;
     @Column(nullable = false, updatable = false)
-    private String employeeCode;
+    private String codContato;
+
 
     public Contato() {
 
