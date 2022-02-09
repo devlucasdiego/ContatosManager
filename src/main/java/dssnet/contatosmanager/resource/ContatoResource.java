@@ -43,14 +43,14 @@ public class ContatoResource {
     @PutMapping("/update")
     public ResponseEntity<Contato> updateContato(@RequestBody Contato contato) {
         Contato updateContato = contatoService.updateContato(contato);
-        return new ResponseEntity<>(updateContato, HttpStatus.CREATED);
+        return new ResponseEntity<>(updateContato, HttpStatus.OK);
     }
 
     // Deletar contato
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> deleteContato(@PathVariable("id") Long id) {
         contatoService.deleteContato(id);
-        return new ResponseEntity<>(HttpStatus.CREATED);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 
 }
