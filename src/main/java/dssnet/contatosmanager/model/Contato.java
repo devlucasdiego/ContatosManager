@@ -24,8 +24,7 @@ public class Contato implements Serializable {
     }
 
     // Construtor Especial
-    public Contato(Long id, String nome, String siglaComarca, String nomeComarca, String circuito, String cargo, String numero, String codContato) {
-        this.id = id;
+    public Contato(String nome, String siglaComarca, String nomeComarca, String circuito, String cargo, String numero, String codContato) {
         this.nome = nome;
         this.siglaComarca = siglaComarca;
         this.nomeComarca = nomeComarca;
@@ -111,7 +110,6 @@ public class Contato implements Serializable {
                 ", circuito='" + circuito + '\'' +
                 ", cargo='" + cargo + '\'' +
                 ", numero='" + numero + '\'' +
-                ", codContato='" + codContato + '\'' +
                 '}';
     }
 }
