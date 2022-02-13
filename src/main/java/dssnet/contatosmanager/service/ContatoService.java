@@ -6,11 +6,12 @@ import dssnet.contatosmanager.repo.ContatoRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.nio.file.attribute.UserPrincipalNotFoundException;
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.UUID;
 
 @Service
+@Transactional
 public class ContatoService {
     private final ContatoRepo contatoRepo;
 
