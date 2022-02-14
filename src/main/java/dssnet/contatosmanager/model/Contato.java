@@ -13,7 +13,7 @@ public class Contato implements Serializable {
     private String siglaComarca;
     private String nomeComarca;
     private String circuito;
-    private String cargo;
+    private String perfil;
     private String numero;
     @Column(nullable = false, updatable = false)
     private String codContato;
@@ -24,12 +24,12 @@ public class Contato implements Serializable {
     }
 
     // Construtor Especial
-    public Contato(String nome, String siglaComarca, String nomeComarca, String circuito, String cargo, String numero, String codContato) {
+    public Contato(String nome, String siglaComarca, String nomeComarca, String circuito, String perfil, String numero, String codContato) {
         this.nome = nome;
         this.siglaComarca = siglaComarca;
         this.nomeComarca = nomeComarca;
         this.circuito = circuito;
-        this.cargo = cargo;
+        this.perfil = perfil;
         this.numero = numero;
         this.codContato = codContato;
     }
@@ -75,12 +75,12 @@ public class Contato implements Serializable {
         this.circuito = circuito;
     }
 
-    public String getCargo() {
-        return cargo;
+    public String getPerfil() {
+        return perfil;
     }
 
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
+    public void setPerfil(String perfil) {
+        this.perfil = perfil;
     }
 
     public String getNumero() {
@@ -108,7 +108,7 @@ public class Contato implements Serializable {
                 ", siglaComarca='" + siglaComarca + '\'' +
                 ", nomeComarca='" + nomeComarca + '\'' +
                 ", circuito='" + circuito + '\'' +
-                ", cargo='" + cargo + '\'' +
+                ", perfil='" + perfil + '\'' +
                 ", numero='" + numero + '\'' +
                 '}';
     }
